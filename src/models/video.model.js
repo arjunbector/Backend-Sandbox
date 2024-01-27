@@ -39,5 +39,5 @@ const videoSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-videoSchema.plugin(mongooseAggregatePaginate);
+videoSchema.plugin(mongooseAggregatePaginate); // Adds paginate method to the schema for large file transfers.
 export const Video = mongoose.model("Video", videoSchema);
